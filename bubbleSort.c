@@ -52,13 +52,17 @@ int main(int argc, const char * argv[]) {
         scanf("%d", &arr[i] );
     }
     system("clear");
+    printf("BUBBLE SORT\n");
     printf("Original array: ");
-    display(arr, n);                   // Original array : 10 11 9 8 4 7 3 8
+    display(arr, n);                 
     
     bubbleSort(arr, n);
     
     printf("Sorted array: ");
-    display(arr, n);                // Sorted array : 3 4 7 8 8 9 10 11
-    
+    display(arr, n);                
+    printf("\nHOW IT WORKS\n");
+    printf("Bubble sort works by repeatedly swapping the adjacent elements\nif they are in wrong order\n\n");
+     printf("TIME COMPLEXITY\n");
+    printf("Worst and Averaget Time Complexity is O(n^2)\nBest Case Time Complexity is O(n) if already sorted\n");
     return 0;
 }

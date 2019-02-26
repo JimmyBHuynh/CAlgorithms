@@ -27,7 +27,7 @@ int main()
 		printf("Find Mean (1) \n");
 		printf("Factorial (2) \n");
 		printf("Gauss Elimination (3) \n");
-		
+		printf("Fibonnaci(4) \n");
 		scanf(" %c",&x);
 			switch(x){
 				case '1' :
@@ -39,6 +39,9 @@ int main()
 				case '3' :
 				execl("gaussElimination", "gaussElimination", NULL);
 				break;
+				case '4' :
+				execl("fibonacci", "fibonacci", NULL);
+				break;
 				default:
 				printf("Invalid input");
 					}
@@ -49,11 +52,15 @@ int main()
 		printf("SELECT ALGORITHM TO RUN:\n");
 		printf("---------------------------\n");
 		printf("Bubble Sort (1) \n");
+		printf("Merge Sort (2) \n");
 		
 		scanf(" %c",&x);
 			switch(x){
 				case '1' :
 				execl("bubbleSort","bubbleSort", NULL);
+				break;
+				case '2' :
+				execl("mergeSort","mergeSort",NULL);
 				break;
 				default:
 				printf("Invalid input");
@@ -97,10 +104,6 @@ int main()
 				printf("Invalid input");
 					}
 		break;
-
-
-		case '7' :
-		execl("fibonacci", "fibonacci", NULL);
 		default:
 		 printf("Invalid input \n");
 	}
